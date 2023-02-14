@@ -1,6 +1,7 @@
 --ARQUIVO FINAL
-CREATE DATABASE projeto_final;
-use projeto_final
+drop projeto_escola;
+CREATE DATABASE projeto_escola;
+use projeto_escola;
 
 use master ;
 
@@ -160,7 +161,6 @@ VALUES ('05020555555', 'Bianca Maria dos Santos', '0206 Sanford Ford', '+55-61-9
 
 
 ---------------------------- TABELA CURSO --------------------------
-
 SELECT * FROM CURSO;
 DROP TABLE CURSO;
 
@@ -199,7 +199,6 @@ equipe.', 2),
 
 
 ---------------------------- TABELA MATRICULA --------------------------
-
 SELECT * FROM MATRICULA;
 DROP TABLE MATRICULA;
 
@@ -257,9 +256,7 @@ VALUES (9,'05020555555', '2020/03/23'), (8,'06169933554', '2016/12/03'), (9,'014
 (11,'71491051654', '2021/09/30'), (9,'71841727055', '2017/04/19'), (9,'72192402457', '2019/08/27'), (9,'72453777190', '2019/11/07'),
 (9,'72543077858', '2018/03/05'), (3,'72618080077', '2018/06/18'), (11,'73645095255', '2016/04/14'),(6,'74174171444', '2017/03/01')
 
-
 ------------------------------- DEPARTAMENTO ------------------------------------------------------------------
-
 SELECT * FROM DEPARTAMENTO;
 DROP TABLE DEPARTAMENTO;
 
@@ -283,7 +280,6 @@ VALUES (next value for codigo_departamento,'Exatas'), (next value for codigo_dep
 
 
 --------------------------------------- PROFESSOR -----------------------------------------------------------------------
-
 SELECT * FROM PROFESSOR;
 DROP TABLE PROFESSOR;
 
@@ -298,9 +294,7 @@ data_contratacao date
 
 primary key(matricula),
 constraint fk_dept_prof foreign key (codigo_dept) references DEPARTAMENTO(codigo)
-
 );
-
 
 
 --Criando uma sequencia CODIGO PROFESSOR
@@ -445,7 +439,6 @@ VALUES ('05020555555', 27), ('06169933554', 23),('01437901196', 27),('0171260917
 
 
 --------------------------------------- COMPOE ------------------------------------------------------------------------
-
 SELECT * FROM COMPOE;
 DROP TABLE COMPOE;
 
@@ -467,7 +460,6 @@ VALUES (1, 1), (1, 2),(1, 3),(1, 4),(2, 5),(2, 6),(2, 7),(3, 1),(3, 3),(3, 8),(3
 (12, 36),(12, 37),(12, 38)
 
 --------------------------------PRE_REQ------------------------------------------------------------------------------------
-
 SELECT * FROM PRE_REQ;
 DROP TABLE PRE_REQ;
 
