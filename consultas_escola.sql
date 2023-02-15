@@ -22,4 +22,4 @@ from CURSO as A , COMPOE as B, DISCIPLINA as C
 where A.codigo = B.codigo_curso and B.codigo_disciplina = C.codigo
 
 --Produza um relatório que contenha o nome dos alunos e as disciplinas em que 
---estão matriculados.select A.nome,	   C.nomefrom ALUNO as A, CURSA as B, DISCIPLINA as Cwhere A.cpf = B.cpf_aluno and B.codigo_disciplina = C.codigo -- Produza um relatório com os dados dos professores e as disciplinas que ministram.select A.codigo_dept,	   A.data_contratacao,	   A.dt_nasc,	   A.endereco,	   A.matricula,	   A.nome,	   A.telefone,	   B.nomefrom PROFESSOR as A, DISCIPLINA as Bwhere A.matricula = B.matricula_prof
+--estão matriculados.select A.nome,	   C.nomefrom ALUNO as A, CURSA as B, DISCIPLINA as Cwhere A.cpf = B.cpf_aluno and B.codigo_disciplina = C.codigo -- Produza um relatório com os dados dos professores e as disciplinas que ministram.select A.codigo_dept,	   A.nome,	   A.matricula,	   A.data_contratacao,	   A.dt_nasc,	   A.endereco,	   A.telefone,	   B.nomefrom PROFESSOR as A, DISCIPLINA as Bwhere A.matricula = B.matricula_prof
